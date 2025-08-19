@@ -24,6 +24,7 @@ app.get("/", (req, res) => {
 });
 
 
+    /*const mailOptions = {
 app.post("/contact", (req, res) => {
     const { name, email, message } = req.body;
 
@@ -37,7 +38,6 @@ app.post("/contact", (req, res) => {
         }
     });
 
-    const mailOptions = {
         from: process.env.SMTP_MAIL,
         to: process.env.USER_EMAIL,
         subject: `✉ RUHAN Mail- from ${name}`,
@@ -58,6 +58,6 @@ app.post("/contact", (req, res) => {
     });
     res.redirect("/");
 
-});
+});*/
 
 app.listen(PORT, () => console.log(`listening to the port ${PORT}`));
